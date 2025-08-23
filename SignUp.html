@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Login</title>
+    <style>
+        body{
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-variation-settings:"wdth" 100;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgb(155, 152, 152);
+            margin-top: 0;
+        }
+        .logo{
+            padding: 8px 8px;   
+        }
+        .icon{
+            margin-right: 9px;
+            font-size: 18px;
+        }
+        ul{
+            display: flex;
+            gap: 2px;
+            text-decoration: none;
+            list-style-type: none;
+            justify-content: space-around;
+        }
+        ul li{
+            padding: 8px 8px;  
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        li:hover{
+            cursor: pointer;
+        }
+        .container{
+            justify-content: center;
+        }
+        .container-head{
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .Details{
+            justify-content: center;
+            margin-left: 10rem;
+        }
+        input{
+            width: 30%;
+            padding: 10px 10px;
+            font-size: 20px;
+            border-radius: 5px;
+            margin-bottom: 17px;
+            border: 0;
+            font-size: 16px;
+            background-color: #eee;
+        }
+        
+        button{
+            border-radius: 5px;
+            border: none;
+            background-color: #eee;
+        }
+        button:hover{
+            border-radius: 5px;
+            background-color: #cccccc;
+            border: none;
+        }
+        span{
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        button:active{
+            color: red;
+        }
+        .submit-button{
+            padding: 10px 10px;
+        }
+        .submit-button button{
+            padding: 12px 12px;
+            background-color: rgb(39, 39, 251);
+            font-size: 18px;
+            width: 30%;
+            text-align: center;
+            color: #fff;
+        }
+        .submit-button button:hover{
+            background-color: rgb(45, 45, 255);
+            cursor: pointer;
+        }
+        .already-account{
+            margin-left: 110px;
+            font-size: 16px;
+        }
+        .already-account:hover{
+            cursor: pointer;
+            
+        }
+        .already-account a:active{
+            color: red;
+        }
+       @media (max-width:535px) {
+            body{
+                font-size: 18px;
+            }
+            .container{
+                text-align: left;
+            }
+            input{
+                width: 200px;
+            }
+            .Details{
+                margin-left: 0;
+                padding: 7px 7px;
+                font-size: 15px;
+            }
+            .already-account {
+                margin-left: 30px;
+            }
+       }
+    </style>
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <i class="ri-shapes-fill icon" style="display: inline;"></i><h1 style="display: inline;">Exam Portal</h1>
+        </div> 
+
+        <div class="nav-bar-content">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <button class="login"><li>login</li></button>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="container-head">
+            <h1>Create your account</h1> 
+        </div>
+
+        <div class="Details">
+            <span style="display: block;">Name</span><input placeholder="Enter your name"></input> 
+            <span style="display: block;">Email</span><input type="email" placeholder="Enter your email"></input> 
+            <span style="display: block;">Username</span><input placeholder="choose a username"></input> 
+            <span style="display: block;">Password</span><input type="password" placeholder="Enter password"></input> 
+            <div class="submit-button">
+                <button>Submit</button>
+            </div>
+
+            <div class="already-account">
+                Already a user? <a href="Login.html">login</a>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>
