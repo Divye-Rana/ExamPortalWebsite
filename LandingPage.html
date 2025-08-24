@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Landing Page</title>
+    <style>
+        body{
+                font-family: "Open Sans", sans-serif;
+                font-style: normal;
+                font-variation-settings:"wdth" 100;
+            }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgb(155, 152, 152);
+            margin-top: 0;
+        }
+        .logo{
+            padding: 8px 8px;   
+        }
+        .icon{
+            margin-right: 9px;
+            font-size: 18px;
+        }
+        ul{
+            display: flex;
+            gap: 2px;
+            text-decoration: none;
+            list-style-type: none;
+            justify-content: space-around;
+        }
+        ul li{
+            padding: 8px 8px;  
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        li:hover{
+            cursor: pointer;
+        }
+        
+        button{
+            border-radius: 5px;
+            border: none;
+            background-color: #eee;
+        }
+        button:hover{
+            border-radius: 5px;
+            background-color: #cccccc;
+            border: none;
+        }
+        button:active{
+            color: red;
+        }
+        .hero-section img{
+            width: 1050px;
+            height: 550px;
+            border-radius: 10px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+        }  
+        .hero-section{
+            text-align: center;
+        }
+        .key-features{
+            margin-left: 15rem;
+        }
+        .gridContainer{
+            margin-top: 10px;
+            width: 700px;
+            height: 190px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 0.8rem;
+        }
+        .gridContainer1{
+            height: 150px;
+            width: 316px;
+            border: 1px solid rgb(197, 194, 194);
+            text-align: justify;
+            justify-content: center;
+            padding: 10px 10px;
+            border-radius: 4px;
+            font-size: 25px;
+        }
+        .gridContainer1 h5{
+            margin-top: 0;
+            margin-bottom: 2px;
+        }
+        .gridContainer1 p{
+            font-size: 16px;
+            color: #220a0a;
+        }
+        
+        .footer{
+            justify-content: space-around;
+        }
+        .footer ul li{
+            font-size: 16px;
+            font-weight: 400;
+            color: #220a0a;
+        }
+        .text-overlay {
+            position: absolute;
+            top: 50%;            
+            left: 50%;           
+            transform: translate(-50%, -50%);
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .text-overlay button{
+            cursor: pointer;
+            padding: 12px 12px;
+            width: 110px;
+            background-color: rgb(69, 69, 190);
+            color: white;
+        }
+        .text-overlay p{
+            font-size: 16px;
+        }
+        .footer span{
+            text-align: center;
+        }
+        @media (max-width:915px) {
+            body{
+                font-size: 18px;
+            }     
+           h1{
+                font-size: 18px;
+            } 
+            h3{
+                font-size: 16px;
+            }
+            ul li{
+                padding: 5px 5px;
+                font-size: 16px;
+            }
+            .hero-section img{
+                width: 320px;
+                height: 200px;
+            }
+            .key-features{
+                margin-left: 1rem;
+            }
+            .gridContainer{
+                display: block;  
+                height: 590px; 
+            }
+            .gridContainer1{
+                margin-top: 2rem;
+            }
+            .text-overlay{
+                top: 30%;
+                font-size: 10px;
+                padding : 0px 0px;
+            }
+            .text-overlay p{
+                font-size: 12px;
+                padding: 0px 0px;
+            }
+
+        }
+       </style>
+</head>
+<body>
+     <nav>
+        <div class="logo">
+            <i class="ri-shapes-fill icon" style="display: inline;"></i><h1 style="display: inline;">Exam Portal</h1>
+        </div> 
+
+        <div class="nav-bar-content">
+            <ul>
+                <a href="LandingPage.html" style="text-decoration: none; color: black;"><li>Home</li></a>
+                <li>About</li>
+                <li>Contact</li>
+                <a href="Login.html"><button class="login"><li>login</li></button></a>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <img src="herosectionImage.webp" alt="Hero Section">
+        <div class="text-overlay">
+            <h1>Welcome to Exam Portal</h1>
+            <p>Your one stop solution for online exams and progress tracking.</p>
+            <button>Explore</button>
+        </div>   
+    </div>
+
+    <div class="key-features">
+        <h3>Key Features</h3>
+        <br>
+        <h2>Our Features</h2>
+        <span>Discover the benifits of using our exam portal.</span>
+        <div class="gridContainer">
+            <div class="gridContainer1">
+                <i class="ri-file-line"></i>
+                <h5>Wide Range of Exams</h5>
+                <p>Access a diverse selection of exams across various subjects.</p>
+            </div>
+            <div class="gridContainer1">
+                <i class="ri-line-chart-line"></i>
+                <h5>Progress Tracking</h5>
+                <p>Monitor your performace and Identify areas for improvement.</p>
+            </div>
+            <div class="gridContainer1">
+                <i class="ri-time-line"></i>
+                <h5>Flexible Scheduling</h5>
+                <p>Take exams at your convenience with our flexible scheduling options.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="key-features">
+        <h3>Why Choose Us?</h3>
+        <br>
+        <h2>Advatanges of Exam Portal</h2>
+        <span>Explore the unique benefits of using platform.</span>
+        <div class="gridContainer">
+            <div class="gridContainer1">
+                <i class="ri-quill-pen-ai-line"></i>
+                <h5>User-Friendly Interface</h5>
+                <p>Navigate our paltform with ease, thanks to our intutive design.</p>
+            </div>
+            <div class="gridContainer1">
+                <i class="ri-rotate-lock-line"></i>
+                <h5>Secure Testing Environment</h5>
+                <p>Rest assured that your exams are conducted in a safe and secure environment.</p>
+            </div>
+            <div class="gridContainer1">
+                <i class="ri-exchange-funds-line"></i>
+                <h5>Comprehensive Performance Analysis</h5>
+                <p>Gain valuable insights into your performace with detailed analytics.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <footer class="footer">
+
+        <ul>
+            <li>Contact Us</li>
+            <li>Privacy Policy</li>
+            <li>Terms of Services</li>
+            
+        </ul>
+        <div style="text-align: center;">&copy; 2025 Exam Portal. All rights reversed.</div>
+    </footer>
+
+    </div>
+</body>
+</html>
